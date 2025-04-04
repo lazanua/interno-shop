@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/interno-shop/static/css/main.4456ecf3.css",
+    "main.js": "/interno-shop/static/js/main.611f4996.js",
+    "static/media/bg.jpg": "/interno-shop/static/media/bg.5226bf2aedd58542d7e5.jpg",
+    "static/media/01.jpg": "/interno-shop/static/media/01.519f41afc7155a5f8fba.jpg",
+    "static/media/04.jpg": "/interno-shop/static/media/04.5772fdf78ac1fb45b712.jpg",
+    "static/media/02.jpg": "/interno-shop/static/media/02.16cd1a33dd8775a09b39.jpg",
+    "static/media/03.jpg": "/interno-shop/static/media/03.c06cbfc9e3e3fb632902.jpg",
+    "static/media/02.svg": "/interno-shop/static/media/02.e2374c6461bb42ab4145e1a96766eaf7.svg",
+    "static/media/04.svg": "/interno-shop/static/media/04.f59f576cd5e3ce266b78a8d83d254e2e.svg",
+    "static/media/05.svg": "/interno-shop/static/media/05.00e59d12663b520f2c70dbe362fa3a8f.svg",
+    "static/media/01.svg": "/interno-shop/static/media/01.406079093bebec76704ae3938b4ba383.svg",
+    "static/media/03.svg": "/interno-shop/static/media/03.cf2f0dab5e7befcb7bf0673685ac8161.svg",
+    "static/media/insta.svg": "/interno-shop/static/media/insta.5bbd28d808fd3951cf81e7b6796b27bf.svg",
+    "static/media/twitter.svg": "/interno-shop/static/media/twitter.6a5ec03bca7abd4973590d8aaf30930b.svg",
+    "static/media/icon-call.svg": "/interno-shop/static/media/icon-call.dde5607785de3988023c1379ae4eab71.svg",
+    "index.html": "/interno-shop/index.html",
+    "static/media/linkedin.svg": "/interno-shop/static/media/linkedin.01c30616c0c3e6cb8747601a4ff67063.svg",
+    "static/media/facebook.svg": "/interno-shop/static/media/facebook.7c78fd5e68f85e10936d412c13792adb.svg",
+    "static/media/arrow-btn-dark.svg": "/interno-shop/static/media/arrow-btn-dark.3bd6c6b0d17e4d7058a5.svg",
+    "static/media/arrow-btn.svg": "/interno-shop/static/media/arrow-btn.d4cbd0aa2724ca538a7e.svg",
+    "static/media/patter-after.svg": "/interno-shop/static/media/patter-after.ca0f906545934fa8c0f4.svg",
+    "static/media/patter-before.svg": "/interno-shop/static/media/patter-before.a738ad336885d34a81e0.svg",
+    "main.4456ecf3.css.map": "/interno-shop/static/css/main.4456ecf3.css.map",
+    "main.611f4996.js.map": "/interno-shop/static/js/main.611f4996.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4456ecf3.css",
+    "static/js/main.611f4996.js"
+  ]
+}
