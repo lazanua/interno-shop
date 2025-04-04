@@ -1,0 +1,16 @@
+.services__img img {
+  border-radius: 0 326px 0 123px;
+}
+.services__content {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: attr(data-number);
+    right: 0;
+    top: 0;
+    font-family: var(--title);
+    font-size: 120px;
+    line-height: 125%;
+    color: #fff;
+  }
+}

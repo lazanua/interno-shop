@@ -1,0 +1,29 @@
+.question {
+  padding-bottom: 19px;
+  border-bottom: 1px solid var(--brown);
+  transition: all 0.2s ease-in;
+  &:hover {
+    cursor: pointer;
+  }
+  .question__text {
+    display: none;
+  }
+  .question__icon-open {
+    display: none;
+  }
+
+  &.active {
+    .question__title {
+      color: var(--brown);
+    }
+    .question__text {
+      display: block;
+    }
+    .question__icon-open {
+      display: block;
+    }
+    .question__icon-close {
+      display: none;
+    }
+  }
+}

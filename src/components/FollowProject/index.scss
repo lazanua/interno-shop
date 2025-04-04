@@ -1,0 +1,42 @@
+.follow__img img {
+  border-radius: 0 80px 0 0;
+}
+.follow__name {
+  margin-bottom: 4px;
+}
+.follow__category {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+.follow__content {
+  justify-content: space-between;
+  width: 548px;
+}
+@media (min-width: 1024px) {
+}
+.follow__projects {
+  display: grid;
+  column-gap: 104px;
+  row-gap: 56px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.follow__content {
+  margin-top: 44px;
+}
+.follow__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.follow__title {
+  margin-bottom: 8px;
+}
+.follow__text {
+  margin-bottom: 93px;
+  max-width: 740px;
+}

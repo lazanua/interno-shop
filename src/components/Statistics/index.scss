@@ -1,0 +1,25 @@
+.statistics__row {
+  padding: 151px 59px;
+  align-items: center;
+  justify-content: space-between;
+}
+.statistics__number {
+  font-family: var(--title);
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: var(--brown);
+  margin-bottom: 16px;
+}
+.statistics {
+  background-color: #f4f0ec;
+}
+.statistics__item {
+  text-align: center;
+}
+.statistics__line {
+  background-color: var(--brown);
+  height: 130px;
+  width: 1px;
+}
