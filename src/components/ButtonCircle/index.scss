@@ -1,0 +1,14 @@
+.button-circle {
+  background-color: #f4f0ec;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+  &:hover {
+    background-color: #cda274;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,24 @@
+.footer__link {
+  line-height: 300%;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.footer__social:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.footer__row {
+  justify-content: space-between;
+  align-items: start;
+}
+.footer__text {
+  margin-bottom: 31px;
+}
+.footer__logo {
+  margin-bottom: 26px;
+}
+.footer__title {
+  margin-bottom: 9px;
+}

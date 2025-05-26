@@ -1,0 +1,19 @@
+.title__wrapper {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 356px;
+  margin-bottom: 200px;
+}
+.title__content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  // padding: 41px 0 74px 0;
+  width: 503px;
+  text-align: center;
+  border-radius: 37px 37px 0 0;
+}
