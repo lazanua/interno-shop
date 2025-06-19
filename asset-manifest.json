@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/interno-shop/static/css/main.4456ecf3.css",
+    "main.css": "/interno-shop/static/css/main.127a0448.css",
     "main.js": "/interno-shop/static/js/main.611f4996.js",
     "static/media/bg.jpg": "/interno-shop/static/media/bg.5226bf2aedd58542d7e5.jpg",
     "static/media/01.jpg": "/interno-shop/static/media/01.519f41afc7155a5f8fba.jpg",
@@ -22,11 +22,11 @@
     "static/media/arrow-btn.svg": "/interno-shop/static/media/arrow-btn.d4cbd0aa2724ca538a7e.svg",
     "static/media/patter-after.svg": "/interno-shop/static/media/patter-after.ca0f906545934fa8c0f4.svg",
     "static/media/patter-before.svg": "/interno-shop/static/media/patter-before.a738ad336885d34a81e0.svg",
-    "main.4456ecf3.css.map": "/interno-shop/static/css/main.4456ecf3.css.map",
+    "main.127a0448.css.map": "/interno-shop/static/css/main.127a0448.css.map",
     "main.611f4996.js.map": "/interno-shop/static/js/main.611f4996.js.map"
   },
   "entrypoints": [
-    "static/css/main.4456ecf3.css",
+    "static/css/main.127a0448.css",
     "static/js/main.611f4996.js"
   ]
 }
