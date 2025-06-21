@@ -1,12 +1,20 @@
 {
   "files": {
-    "main.css": "/interno-shop/static/css/main.8148cc1f.css",
-    "main.js": "/interno-shop/static/js/main.6ff58a11.js",
+    "main.css": "/interno-shop/static/css/main.fcddb841.css",
+    "main.js": "/interno-shop/static/js/main.c5235c8f.js",
     "static/media/bg.jpg": "/interno-shop/static/media/bg.5226bf2aedd58542d7e5.jpg",
+    "static/media/person1.jpg": "/interno-shop/static/media/person1.79465eb045fec4794088.jpg",
+    "static/media/person8.jpg": "/interno-shop/static/media/person8.8543e5daf342d4c60ffa.jpg",
+    "static/media/person2.jpg": "/interno-shop/static/media/person2.b030129b3525148c3b4c.jpg",
+    "static/media/person4.jpg": "/interno-shop/static/media/person4.dbd67da920e4df6b225e.jpg",
     "static/media/01.jpg": "/interno-shop/static/media/01.519f41afc7155a5f8fba.jpg",
+    "static/media/person6.jpg": "/interno-shop/static/media/person6.10951d964b68da5866e7.jpg",
+    "static/media/person7.jpg": "/interno-shop/static/media/person7.dc1c7b0a686a4fdab07c.jpg",
     "static/media/04.jpg": "/interno-shop/static/media/04.5772fdf78ac1fb45b712.jpg",
     "static/media/02.jpg": "/interno-shop/static/media/02.16cd1a33dd8775a09b39.jpg",
     "static/media/03.jpg": "/interno-shop/static/media/03.c06cbfc9e3e3fb632902.jpg",
+    "static/media/person5.jpg": "/interno-shop/static/media/person5.3c4fa78a8cab4f6a50f7.jpg",
+    "static/media/person3.jpg": "/interno-shop/static/media/person3.6b35ba9da62f3122e5ed.jpg",
     "static/media/02.svg": "/interno-shop/static/media/02.e2374c6461bb42ab4145e1a96766eaf7.svg",
     "static/media/04.svg": "/interno-shop/static/media/04.f59f576cd5e3ce266b78a8d83d254e2e.svg",
     "static/media/05.svg": "/interno-shop/static/media/05.00e59d12663b520f2c70dbe362fa3a8f.svg",
@@ -26,11 +34,11 @@
     "static/media/arrow-btn.svg": "/interno-shop/static/media/arrow-btn.d4cbd0aa2724ca538a7e.svg",
     "static/media/patter-after.svg": "/interno-shop/static/media/patter-after.ca0f906545934fa8c0f4.svg",
     "static/media/patter-before.svg": "/interno-shop/static/media/patter-before.a738ad336885d34a81e0.svg",
-    "main.8148cc1f.css.map": "/interno-shop/static/css/main.8148cc1f.css.map",
-    "main.6ff58a11.js.map": "/interno-shop/static/js/main.6ff58a11.js.map"
+    "main.fcddb841.css.map": "/interno-shop/static/css/main.fcddb841.css.map",
+    "main.c5235c8f.js.map": "/interno-shop/static/js/main.c5235c8f.js.map"
   },
   "entrypoints": [
-    "static/css/main.8148cc1f.css",
-    "static/js/main.6ff58a11.js"
+    "static/css/main.fcddb841.css",
+    "static/js/main.c5235c8f.js"
   ]
 }
