@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/interno-shop/static/css/main.0e9f266b.css",
-    "main.js": "/interno-shop/static/js/main.6db43dde.js",
+    "main.css": "/interno-shop/static/css/main.349375e5.css",
+    "main.js": "/interno-shop/static/js/main.da3536bf.js",
     "static/media/bg.jpg": "/interno-shop/static/media/bg.5226bf2aedd58542d7e5.jpg",
     "static/media/01.jpg": "/interno-shop/static/media/01.519f41afc7155a5f8fba.jpg",
     "static/media/04.jpg": "/interno-shop/static/media/04.5772fdf78ac1fb45b712.jpg",
@@ -12,7 +12,11 @@
     "static/media/05.svg": "/interno-shop/static/media/05.00e59d12663b520f2c70dbe362fa3a8f.svg",
     "static/media/01.svg": "/interno-shop/static/media/01.406079093bebec76704ae3938b4ba383.svg",
     "static/media/03.svg": "/interno-shop/static/media/03.cf2f0dab5e7befcb7bf0673685ac8161.svg",
+    "static/media/icon1.svg": "/interno-shop/static/media/icon1.beba9c1b5a2346a92c7d47dac9be7597.svg",
+    "static/media/icon2.svg": "/interno-shop/static/media/icon2.95547abee6e3a1dcbd12ad14b85e1163.svg",
+    "static/media/icon3.svg": "/interno-shop/static/media/icon3.37dc092fcdc246ccf3c4df281193aa95.svg",
     "static/media/insta.svg": "/interno-shop/static/media/insta.5bbd28d808fd3951cf81e7b6796b27bf.svg",
+    "static/media/icon4.svg": "/interno-shop/static/media/icon4.515033b941a89c6b1ab80b9b197fbcec.svg",
     "static/media/twitter.svg": "/interno-shop/static/media/twitter.6a5ec03bca7abd4973590d8aaf30930b.svg",
     "static/media/icon-call.svg": "/interno-shop/static/media/icon-call.dde5607785de3988023c1379ae4eab71.svg",
     "index.html": "/interno-shop/index.html",
@@ -22,11 +26,11 @@
     "static/media/arrow-btn.svg": "/interno-shop/static/media/arrow-btn.d4cbd0aa2724ca538a7e.svg",
     "static/media/patter-after.svg": "/interno-shop/static/media/patter-after.ca0f906545934fa8c0f4.svg",
     "static/media/patter-before.svg": "/interno-shop/static/media/patter-before.a738ad336885d34a81e0.svg",
-    "main.0e9f266b.css.map": "/interno-shop/static/css/main.0e9f266b.css.map",
-    "main.6db43dde.js.map": "/interno-shop/static/js/main.6db43dde.js.map"
+    "main.349375e5.css.map": "/interno-shop/static/css/main.349375e5.css.map",
+    "main.da3536bf.js.map": "/interno-shop/static/js/main.da3536bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e9f266b.css",
-    "static/js/main.6db43dde.js"
+    "static/css/main.349375e5.css",
+    "static/js/main.da3536bf.js"
   ]
 }
