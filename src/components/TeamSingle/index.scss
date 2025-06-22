@@ -1,6 +1,4 @@
 .single__icon {
-  width: 52px;
-  height: 52px;
   background-color: var(--light-color);
   display: flex;
   align-items: center;
@@ -10,7 +8,6 @@
 
 .single__progress-line {
   position: relative;
-  width: 533px;
   background-color: var(--light-color);
   height: 5px;
 }
@@ -47,8 +44,6 @@
   padding: 24px 22px;
   border: 1px solid var(--brown);
   .single__block-icon {
-    height: 44px;
-    width: 44px;
     border-radius: 50%;
     background-color: var(--light-color);
     display: flex;
@@ -56,8 +51,6 @@
     align-items: center;
   }
   .single__minus {
-    width: 18px;
-    height: 2px;
     background-color: var(--dark-color);
   }
   .single__block-text {

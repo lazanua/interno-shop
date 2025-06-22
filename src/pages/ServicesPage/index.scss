@@ -14,3 +14,8 @@
     color: #fff;
   }
 }
+@media (max-width: 768px) {
+  .services__content::after {
+    font-size: 80px;
+  }
+}

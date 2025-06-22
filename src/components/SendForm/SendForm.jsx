@@ -18,13 +18,17 @@ const SendForm = ({ hasCheckbox, inputsNames, buttonClasses }) => {
       }
     });
     if (isFormFilled) {
-      setIsCorrectForm(true);
-      setDataUsers(
-        (prevState) =>
-          Object.keys(prevState).reduce((acc, key) => {
-            acc[key] = "";
-            return acc;
-          }, {}) //очищаємо всі інпути
+      if (/^\+?[0-9\s\-()]{10,20}$/.test(dataUsers[3])) {
+        console.log("Правильний номер");
+      } else {
+        console.log("неправильний номер");
+      }
+
+      setDataUsers((prevState) =>
+        Object.keys(prevState).reduce((acc, key) => {
+          acc[key] = "";
+          return acc;
+        }, {})
       );
       setNotFilledInputs([]);
     }
@@ -34,7 +38,38 @@ const SendForm = ({ hasCheckbox, inputsNames, buttonClasses }) => {
       <div className="flex flex-col flex-nowrap lg:flex-row lg:flex-wrap gap-x-[40px] gap-y-[50px] justify-center xl:items-center">
         {inputsNames.map((input, index) => (
           <div className="">
-            <input
+            {index === inputsNames.length - 1 && (
+              <textarea
+                placeholder={input.name}
+                className="lg:w-[800px] w-full h-[90px] md:h-[183px] focus:outline-none focus:ring-0"
+                style={{ borderBottom: "1px solid #000" }}
+                onChange={(e) =>
+                  setDataUsers((prevState) => ({
+                    ...prevState,
+                    [input.name]: e.target.value,
+                  }))
+                }
+                value={dataUsers?.[input.name]}
+              />
+            )}
+            {index < inputsNames.length - 1 && (
+              <input
+                onChange={(e) =>
+                  setDataUsers((prevState) => ({
+                    ...prevState,
+                    [input.name]: e.target.value,
+                  }))
+                }
+                value={dataUsers?.[input.name]}
+                placeholder={input.name}
+                className={`${
+                  notFilledInputs.includes(input.name)
+                    ? "form__input--warning"
+                    : ""
+                } lg:w-[380px] w-full h-[45px]`}
+              />
+            )}
+            {/* <input
               type={input.type}
               className={`${
                 notFilledInputs.includes(input.name)
@@ -43,8 +78,8 @@ const SendForm = ({ hasCheckbox, inputsNames, buttonClasses }) => {
               }
               ${
                 index === inputsNames.length - 1
-                  ? "xl:w-[800px] w-[100%] h-[183px]"
-                  : "xl:w-[380px] w-[100%] h-[45px]"
+                  ? "lg:w-[800px] w-full h-[90px] md:h-[183px]"
+                  : "lg:w-[380px] w-full h-[45px]"
               }`}
               placeholder={input.name}
               onChange={(e) =>
@@ -54,7 +89,7 @@ const SendForm = ({ hasCheckbox, inputsNames, buttonClasses }) => {
                 }))
               }
               value={dataUsers?.[input.name]}
-            />
+            /> */}
           </div>
         ))}
       </div>
@@ -75,7 +110,7 @@ const SendForm = ({ hasCheckbox, inputsNames, buttonClasses }) => {
         Please enter the fields
       </div>
       <div
-        className={`form__button-wrapper flex lg:justify-center md:justify-center sm:justify-center  ${buttonClasses}`}
+        className={`form__button-wrapper flex justify-center  md:${buttonClasses}`}
       >
         <button
           type="submit"

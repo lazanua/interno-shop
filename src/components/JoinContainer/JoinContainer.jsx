@@ -10,13 +10,13 @@ const JoinContainer = () => {
       variants={animationsLeft}
       viewport={{ once: true }}
     >
-      <section className="join my-[120px] lg:my-[200px]">
-        <div className="container">
-          <div className="join__wrapper flex bg-dark text-center rounded-[70px] py-[80px] flex flex-col items-center justify-center text-white">
+      <section className="join my-[50px] md:my-[70px] xl:my-[100px] lg:my-[200px]">
+        <div className="container contents sm:block">
+          <div className="join__wrapper bg-dark text-center rounded-none sm:rounded-[70px] py-[40px] md:py-[60px] xl:py-[80px] flex flex-col items-center justify-center text-white">
             <h2 className="join__title title mb-[11px] text-white">
               Wanna join the interno?
             </h2>
-            <div className="join__text text mb-[32px] text-white">
+            <div className="join__text text mb-[24px] md:mb-[32px] text-white">
               <p>It is a long established fact will be distracted.</p>
             </div>
             <Link to="/contact" className="join__button button button--light">

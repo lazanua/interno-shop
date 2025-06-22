@@ -8,6 +8,9 @@
       color: rgb(255, 137, 137);
     }
   }
+  textarea::placeholder {
+    color: var(--dark-color);
+  }
   .form__checkbox {
     display: none; // Скрываем стандартный чекбокс
 

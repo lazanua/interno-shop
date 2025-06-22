@@ -5,7 +5,7 @@ import facebook from "../../img/footer/facebook.svg";
 import twitter from "../../img/footer/twitter.svg";
 import linkedin from "../../img/footer/linkedin.svg";
 import { animationsLeft, animationsRight } from "../../data/animations";
-const TeamSingle = ({ person }) => {
+const TeamSingle = ({ person, img }) => {
   const questions = [
     "Website & Mobile App Design?",
     "How to Easy Successful Projects?",
@@ -13,10 +13,10 @@ const TeamSingle = ({ person }) => {
   ];
   const [activeQuestion, setActiveQuestion] = useState(0);
   return (
-    <div className="single text mb-[200px]">
+    <div className="single text mb-[40px] sm:mb-[60px] md:mb-[90px] lg:mb-[170px] xl:mb-[200px]">
       <div className="container">
         <motion.div
-          className="single__wrapper text flex gap-[59px]"
+          className="single__wrapper text flex lg:flex-row flex-col gap-x-[59px]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -27,17 +27,17 @@ const TeamSingle = ({ person }) => {
             custom={1}
           >
             <img
-              className="w-[590px] h-[689px] rounded-[50px] object-cover"
-              src={`/img/team/${person.id}.jpg`}
+              className="w-[80%] mx-auto lg:mx-0 h-auto lg:w-[590px] lg:h-[689px] rounded-[50px] object-cover"
+              src={img}
               alt=""
             />
           </motion.div>
-          <div className="single__info pt-[67.5px]">
+          <div className="single__info pt-[30px] md:pt-[67.5px]">
             <motion.div className="" variants={animationsRight} custom={2}>
               <div className="single__name title">{person.name}</div>
               <div className="single__job mb-[30px]">Designer</div>
 
-              <div className="single__text max-w-[552px] mb-[32px]">
+              <div className="single__text max-w-max lg:max-w-[552px] mb-[32px]">
                 <p>
                   Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
                   turpmaximus.posuere in.Contrpobelie frandomised words which
@@ -136,7 +136,7 @@ const TeamSingle = ({ person }) => {
             </motion.div>
           </div>
         </motion.div>
-        <div className="single__title title mt-[100px] mb-[18px]">
+        <div className="single__title title mt-[35px] sm:mt-[50px] md:mt-[70px] lg:mt-[100px] mb-[18px]">
           Short Biography​
         </div>
         <div className="single__text mb-[45px]">
@@ -153,7 +153,10 @@ const TeamSingle = ({ person }) => {
             majority have suffered alteration in some form chunks as necessary.
           </p>
         </div>
-        <div className="single__row flex gap-[95px]">
+        <div
+          className="single__row w-full flex flex-col gap-y-[30px] md:gap-y-[45px]
+         lg:flex-row gap-x-[60px] xl:gap-x-[95px]"
+        >
           <div className="single__item">
             <div className="single__subtitle subtitle mb-[12px]">
               Simplicity and Functionality
@@ -172,10 +175,10 @@ const TeamSingle = ({ person }) => {
             <div className="single__columns flex flex-col gap-[20px] mt-[30px]">
               {person.skills.map((skill) => (
                 <div className="single__skill">
-                  <div className="font-medium leading-[1.5] mb-[6px]">
+                  <div className="font-medium leading-[1.5] mb-[24px] md:mb-[6px]">
                     {skill.skill}
                   </div>
-                  <div className="single__progress-line">
+                  <div className="single__progress-line w-full lg:w-[533px]">
                     <div
                       className="single__complete-line"
                       style={{ width: `${skill.percentage}%` }}
@@ -195,7 +198,7 @@ const TeamSingle = ({ person }) => {
               ))}
             </div>
           </div>
-          <div className="single__item max-w-[577px]">
+          <div className="single__item w-full max-w-max lg:w-auto lg:max-w-[577px]">
             <div className="single__subtitle subtitle mb-[12px]">
               Qustion And Answer
             </div>
@@ -217,7 +220,7 @@ const TeamSingle = ({ person }) => {
                     <div className="single__block-title font-bold">
                       {question}
                     </div>
-                    <div className="single__block-icon">
+                    <div className="single__block-icon w-[30px] h-[30px] md:w-[44px] md:h-[44px]">
                       <div
                         className={`single__plus ${
                           activeQuestion === index ? "" : "none"
@@ -244,7 +247,7 @@ const TeamSingle = ({ person }) => {
                         </svg>
                       </div>
                       <div
-                        className={`single__minus ${
+                        className={`single__minus w-[13px] h-[2px] md:w-[18px] md:h-[2px] ${
                           activeQuestion === index ? "none" : ""
                         }`}
                       ></div>

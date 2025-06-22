@@ -15,6 +15,8 @@ html {
 @media (max-width: 1200px) {
   .container {
     width: 100%;
+    padding: 0;
+    padding: 0 10px;
   }
 }
 .title {
@@ -25,7 +27,6 @@ html {
   font-family: var(--title);
 }
 .text {
-  font-size: 22px;
   line-height: 150%;
   letter-spacing: 0.01em;
   color: #4d5053;
@@ -78,6 +79,11 @@ html {
     }
   }
 }
+@media (max-width: 768px) {
+  .button {
+    padding: 20px 48px 20px 27px;
+  }
+}
 .link {
   .--after-arow::after {
     right: -40px;
@@ -101,6 +107,11 @@ html {
   font-size: 40px;
   line-height: 125%;
   color: #292f36;
+}
+@media (max-width: 768px) {
+  .logo {
+    font-size: 32px;
+  }
 }
 .none {
   display: none;
@@ -155,17 +166,53 @@ html {
 
 .title {
   @media (max-width: 768px) {
-    font-size: 34px;
+    font-size: 28px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 40px;
+    font-size: 36px;
   }
   @media (min-width: 1024px) and (max-width: 1200px) {
     font-size: 44px;
   }
 }
-.subtitle {
-  @media (min-width: 768px) and (max-width: 1200px) {
+.text {
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1024px) {
     font-size: 22px;
+  }
+}
+.subtitle {
+  @media (max-width: 768px) {
+    resize: 20px;
+  }
+  @media (min-width: 768.9px) and (max-width: 1200px) {
+    font-size: 22px;
+  }
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+input {
+  border-bottom: 1px solid #000;
+  &::placeholder {
+    color: #4d5053;
+  }
+  &.form__input--warning::placeholder {
+    color: rgb(255, 137, 137);
+  }
+}
+textarea,
+input {
+  &::placeholder {
+    color: #4d5053 !important;
   }
 }

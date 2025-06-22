@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Title = ({ title, img, subtitle }) => {
   return (
     <section
-      className="title__wrapper flex justify-center lg:h-[312px] md:h-[264px] h-[206px]"
+      className="title__wrapper mb-[60px] md:mb-[80px] xl:mb-[120px] lg:mb-[200px] flex justify-center lg:h-[312px] md:h-[264px] h-[206px]"
       style={{ backgroundImage: `url(${img})` }}
     >
       <div

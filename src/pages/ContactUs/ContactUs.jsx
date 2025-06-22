@@ -21,15 +21,18 @@ const ContactUs = () => {
   return (
     <div className="contact">
       <Title title="Contact Us" img={bg} subtitle="Contact" />
-      <div className="container">
-        <h2 className="contact__title title text-center xl:mb-[80px] lg:mb-[60px] mb-[40px]">
+      <div className="container contents md:block">
+        <h2 className="contact__title title text-center mb-[40px] md:mb-[80px]">
           We love meeting new people <br />
           and helping them.
         </h2>
-        <div className="contact__row flex flex-col xl:flex-row gap-y-[30px] gap-x-[55px] items-center justify-center xl:items-start">
-          <div className="contact__info bg-light xl:w-[349px] w-[100%] rounded-[50px] py-[55px] xl:py-[76px] flex flex-col pl-[32px] pr-[56px] xl:h-[437px]">
-            <div className="contact__linkes flex xl:items-start items-center flex-col gap-[22px] xl:gap-[30px]">
-              <a className="contact__link flex gap-[15px]">
+        <div className="contact__row w-full flex flex-col lg:flex-row gap-y-[30px] gap-x-[55px] justify-center items-start">
+          <div
+            className="contact__info bg-light w-full lg:w-[349px] rounded-none  md:rounded-[50px]
+          py-[20px] md:py-[40px] lg:py-[76px] flex flex-col pl-0 pr-0 xl:pl-[32px] xl:pr-[56px] h-auto xl:h-[437px]"
+          >
+            <div className=" mx-auto lg:mx-0 flex flex-col gap-[10px] lg:gap-[30px]">
+              <a className="contact__link items-center flex gap-[15px]">
                 <div className="contact__icon icon w-[52px] h-[52px] bg-white flex justify-center items-center">
                   <svg
                     width="24"
@@ -56,8 +59,8 @@ const ContactUs = () => {
                 </div>
                 <div className="text">info@yourdomain.com</div>
               </a>
-              <a className="contact__link flex gap-[15px] items-center">
-                <div className="contact__icon w-[52px] h-[52px] icon flex justify-center items-center">
+              <a className="contact__link items-center flex gap-[15px] ">
+                <div className="contact__icon bg-white w-[52px] h-[52px] icon flex justify-center items-center">
                   <svg
                     width="23"
                     height="23"
@@ -76,7 +79,7 @@ const ContactUs = () => {
                 <div className="text">+1 (378) 400-1234</div>
               </a>
               <a className="contact__link flex gap-[15px] items-center">
-                <div className="contact__icon w-[52px] h-[52px] icon flex justify-center items-center">
+                <div className="contact__icon bg-white w-[52px] h-[52px] icon flex justify-center items-center">
                   <svg
                     width="23"
                     height="23"
@@ -99,7 +102,7 @@ const ContactUs = () => {
                 <div className="text">www.yourdomain.com</div>
               </a>
             </div>
-            <div className="contact__socials xl:justify-start justify-center flex gap-[35px] mt-[47px]">
+            <div className="contact__socials mx-auto lg:mx-0 flex gap-[35px] mt-[20px] lg:mt-[47px]">
               <div className="contact__social social">
                 <img src={facebook} alt="" />
               </div>
@@ -114,7 +117,7 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <div className="contact__form xl:mb-[142px] lg:mb-[100px] mb-[80px]">
+          <div className="contact__form w-full px-[15px] md:px-0 mb-[40px] md:mb-[100px] lg:mb-[142px]">
             <SendForm
               hasCheckbox={false}
               inputsNames={inputs}
@@ -122,6 +125,8 @@ const ContactUs = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="container contents md:block">
         <MapComponent />
       </div>
     </div>

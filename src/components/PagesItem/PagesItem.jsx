@@ -17,17 +17,23 @@ const PagesItem = ({ title, text, custom }) => {
     <motion.div
       onClick={() => (window.location.href = "/servicessingle")}
       className="pages__item text-center rounded-[30px]
-      lg:w-[398px] md:w-[720px] sm:w-[500px] lg:py-[82px] px-[20px] md:py-[25px]"
+      xl:w-[398px] md:w-auto w-full  lg:py-[82px] py-[12px] px-[20px] md:py-[25px]"
       initial="hidden"
       variants={itemAnimation}
       whileInView="visible"
       custom={custom}
       viewport={{ once: true }}
     >
-      <h4 className="pages__title">{title}</h4>
-      <div className="pages__text text md:text-left">{text}</div>
-      <a className="pages__link link">
-        <span className="--after-arow">Read More</span>
+      <h4 className="mb-[20px] pages__title text-[20px] xl:text-[25px]">
+        {title}
+      </h4>
+      <div className="mb-[24px] md:mb-[40px] xl:mb-[52px] text w-full text-left md:text-left">
+        {text}
+      </div>
+      <a className="pages__link link ">
+        <span className="--after-arow text-[14px] md:text-[18px]">
+          Read More
+        </span>
       </a>
     </motion.div>
   );

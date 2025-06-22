@@ -11,6 +11,7 @@ import {
   animationsRight,
   animationsTop,
 } from "../../data/animations";
+import AboutForm from "../../components/AboutForm/AboutForm";
 const About = () => {
   const inputs = [
     { name: "Name", type: "text" },
@@ -25,23 +26,25 @@ const About = () => {
     <main className="about">
       <Title title="About Us" img={bg} subtitle="About Us" />
       <section className="quote justify-center items-center flex-col">
-        <div className="container">
+        <div className="container contents sm:block">
           <motion.div
-            className="quote__content mb-[200px]"
+            className="quote__content px-[15px] py-[24px] sm:px-[40px]  sm:py-[67px] md:px-[62px] mb-[40px] sm:mb-[140px] md:mb-[200px]"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={animationsTop}
             custom={1}
           >
-            <div className="quote__symbol mb-[27px]">“</div>
-            <div className="quote__quote mb-[34px]">
+            <div className="quote__symbol mb-[-16px] md:mb-[27px]">“</div>
+            <div className="quote__quote w-[90%] sm:w-auto sm:text-[24px] text-[20px] md:text-[35px] mb-[34px]">
               <p>
                 I like an interior that defies labeling. I don't really want
                 someone to walk into a room and know that I did it
               </p>
             </div>
-            <div className="quote__author">-BUNNY WILLIAMS</div>
+            <div className="quote__author text-[20px] md:text-[25px]">
+              -BUNNY WILLIAMS
+            </div>
           </motion.div>
         </div>
       </section>
@@ -53,10 +56,10 @@ const About = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <div className="do__item mb-[150px]">
-              <div className="do__content max-w-[670px] ">
+            <div className="do__item flex-col md:flex-row mb-[40px] md:mb-[80px] xl:mb-[150px]">
+              <div className="do__content w-full md:w-[50%] xl:max-w-[670px] ">
                 <motion.div
-                  className="do__title title"
+                  className="do__title title text-center md:text-start"
                   variants={animationsRight}
                   custom={1}
                 >
@@ -75,7 +78,7 @@ const About = () => {
                   </p>
                 </motion.div>
                 <motion.div
-                  className="do__button button"
+                  className="do__button mx-auto md:mx-0 button"
                   variants={animationsRight}
                   custom={3}
                 >
@@ -85,18 +88,18 @@ const About = () => {
                 </motion.div>
               </div>
               <motion.div
-                className="do__img"
+                className="do__img w-[90%] md:w-[50%] xl:w-auto"
                 variants={animationsRight}
                 custom={1}
               >
                 <img src={do1} alt="" />
               </motion.div>
             </div>
-            <div className="do__item">
-              <div className="do__img">
+            <div className="do__item flex-col-reverse md:flex-row mb-[60px] md:mb-[80px] xl:mb-[150px]">
+              <div className="do__img w-[90%] md:w-[50%] xl:w-auto">
                 <img src={do2} alt="" />
               </div>
-              <div className="do__content max-w-[659px] ">
+              <div className="do__content w-full md:w-[50%] xl:max-w-[670px]">
                 <div className="do__title title">The End Result</div>
                 <div className="do__text text">
                   <p>
@@ -106,7 +109,7 @@ const About = () => {
                     more-or-less normal.
                   </p>
                 </div>
-                <div className="do__button button">
+                <div className="do__button button mx-auto md:mx-0 button">
                   <a href="" className="--after-arow">
                     Our Portfolio
                   </a>
@@ -116,16 +119,17 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="form pt-[213px] pb-[135px]">
+      <section className="form lg:pt-[213px] pb-[60px] md:pb-[90px] lg:pb-[135px]">
         <div className="container">
           <h2 className="form__title title text-center mb-[77px]">
             Creative project? Let's have <br />a productive talk.
           </h2>
-          <SendForm
+          <AboutForm />
+          {/* <SendForm
             hasCheckbox={false}
             inputsNames={inputs}
             buttonClasses="justify-center"
-          />
+          /> */}
         </div>
       </section>
     </main>

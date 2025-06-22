@@ -8,7 +8,6 @@
 .nav {
   position: relative;
   justify-content: space-between;
-  padding: 52px 0;
 }
 // .nav__input {
 //   position: absolute;
@@ -32,15 +31,12 @@
   font-size: 20px;
 }
 .nav__list {
-  gap: 50px;
   li:hover {
     text-decoration: underline;
     cursor: pointer;
   }
 }
-.nav__wrapper {
-  gap: 30px;
-}
+
 .nav__button {
   svg {
     path {
@@ -85,61 +81,58 @@
   transform: translateY(-10px);
 }
 
-.header__burger-btn span:nth-child(2) {
-}
-
 .header__burger-btn span:nth-child(3) {
   transform: translateY(10px);
 }
 
 /* Крестик */
 
-.header.open .header__burger-btn span {
-  background-color: white;
-}
+// .header.open .header__burger-btn span {
+//   background-color: white;
+// }
 
-.header.open .header__burger-btn span:nth-child(1) {
-  transform: translateY(0) rotate(45deg);
-}
+// .header.open .header__burger-btn span:nth-child(1) {
+//   transform: translateY(0) rotate(45deg);
+// }
 
-.header.open .header__burger-btn span:nth-child(2) {
-  opacity: 0;
-}
+// .header.open .header__burger-btn span:nth-child(2) {
+//   opacity: 0;
+// }
 
-.header.open .header__burger-btn span:nth-child(3) {
-  transform: translateY(0) rotate(-45deg);
-}
+// .header.open .header__burger-btn span:nth-child(3) {
+//   transform: translateY(0) rotate(-45deg);
+// }
 
-@media (max-width: 1024px) {
-  .header__burger-btn {
-    display: block;
-  }
-  .nav__wrapper {
-    position: absolute;
-    right: -100%;
-    top: 0;
-    width: 100%;
-    padding: 40px 20px;
-    background-color: var(--brown);
-    visibility: hidden;
-    display: none;
-    transition: transform 0.5s, visibility 0.5s;
-    will-change: transform;
-  }
-  // .nav__list {
-  //   display: block;
-  // }
-  // .menu__item:not(:last-child) {
-  //   margin-right: 0;
-  // }
-  .nav__link {
-    display: block;
-    font-size: 30px;
-    color: white;
-  }
-  .header.open .nav__wrapper {
-    display: block;
-    transform: translateX(-100%);
-    visibility: visible;
-  }
-}
+// @media (max-width: 1024px) {
+//   .header__burger-btn {
+//     display: block;
+//   }
+//   .nav__wrapper {
+//     position: absolute;
+//     right: -100%;
+//     top: 0;
+//     width: 100%;
+//     // padding: 40px 20px;
+//     background-color: var(--brown);
+//     visibility: hidden;
+//     display: none;
+//     transition: transform 0.5s, visibility 0.5s;
+//     will-change: transform;
+//   }
+//   // .nav__list {
+//   //   display: block;
+//   // }
+//   // .menu__item:not(:last-child) {
+//   //   margin-right: 0;
+//   // }
+//   .nav__link {
+//     display: block;
+//     font-size: 30px;
+//     color: white;
+//   }
+//   .header.open .nav__wrapper {
+//     display: block;
+//     transform: translateX(-100%);
+//     visibility: visible;
+//   }
+// }

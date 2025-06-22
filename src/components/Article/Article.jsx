@@ -16,7 +16,7 @@ const Article = ({ img, category, title, date, animation, custom }) => {
       variants={animation}
       custom={custom}
     >
-      <div className="article__wrapper">
+      <div className="article__wrapper ">
         <div className="article__img">
           <img src={img} alt="" />
         </div>

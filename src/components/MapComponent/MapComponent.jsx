@@ -16,7 +16,7 @@ const markerIcon = new L.Icon({
 
 const MapComponent = () => {
   return (
-    <div className="mb-[200px] rounded-[70px] overflow-hidden">
+    <div className="mb-[60px] md:mb-[100px] lg:mb-[200px] rounded-none md:rounded-[70px] overflow-hidden">
       <MapContainer
         center={[50.4501, 30.5234]}
         zoom={12.25}

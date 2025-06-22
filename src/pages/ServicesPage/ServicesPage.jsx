@@ -7,13 +7,46 @@ import img1 from "../../img/pages/services/01.jpg";
 import img2 from "../../img/pages/services/02.jpg";
 import img3 from "../../img/pages/services/03.jpg";
 import img4 from "../../img/pages/services/04.jpg";
+import icon1 from "../../img/pages/services/icon1.svg";
+import icon2 from "../../img/pages/services/icon2.svg";
+import icon3 from "../../img/pages/services/icon3.svg";
+import icon4 from "../../img/pages/services/icon4.svg";
+
 import "./index.scss";
 import JoinContainer from "../../components/JoinContainer/JoinContainer";
 import { textAnimation } from "../../data/animations";
+import ServicesItem from "../../components/ServicesItem/ServicesItem";
 const ServicesPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const icons = [icon1, icon2, icon3, icon4];
+  const servicesItems = [
+    {
+      img: img1,
+      title: "Concept & Details",
+      text: "It is a long established fact  will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry. ",
+      isImgLeft: true,
+    },
+    {
+      img: img2,
+      title: "Idea for Work",
+      text: "It is a long established fact  will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry. ",
+      isImgLeft: false,
+    },
+    {
+      img: img3,
+      title: "Design",
+      text: "It is a long established fact  will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry. ",
+      isImgLeft: true,
+    },
+    {
+      img: img4,
+      title: "Perfection",
+      text: "It is a long established fact  will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry. ",
+      isImgLeft: false,
+    },
+  ];
   const servicesLinkes = [
     "Project Plan",
     "Interior Work",
@@ -37,7 +70,7 @@ const ServicesPage = () => {
     <div className="services">
       <Title title="Services" img={bg} subtitle="Services" />
       <div className="container">
-        <div className="services__grid grid grid-cols-3 grid-rows-2">
+        <div className="services__grid mx-auto grid-cols-1 md:grid-cols-2 grid lg:grid-cols-3 md:grid-rows-3 grid-rows-6 lg:grid-rows-2">
           {servicesLinkes.map((link, index) => (
             <PagesItem
               title={link}
@@ -47,7 +80,14 @@ available, majority."
             />
           ))}
         </div>
-        <div className="services__wrapper text bg-light rounded-[70px] py-[160px] px-[116px] flex flex-col gap-[70px] items-center justify-center mt-[200px]">
+      </div>
+      <div className="container contents xl:block">
+        <div
+          className="services__wrapper text bg-light rounded-none
+        xl:rounded-[70px] py-[40px] md:py-[100px] xl:py-[160px]
+        px-[15px] md:px-[60px] xl:px-[116px] flex flex-col gap-[70px]
+        items-center justify-center  mt-[50px] md:mt-[64px] xl:mt-[150px] lg:mt-[200px]"
+        >
           <motion.div
             className=""
             initial="hidden"
@@ -61,7 +101,7 @@ available, majority."
             >
               How We Work
             </motion.h2>
-            <div className="services__text mb-[30px] text-center max-w-[802px]">
+            <div className="services__text w-full mb-[16px] md:mb-[30px] text-center sm:max-w-[802px]">
               <motion.p variants={textAnimation} custom={1}>
                 It is a long established fact will be distracted.Lorem Ipsum is
                 simply dummy text of the printing and typesetting industry.
@@ -69,21 +109,33 @@ available, majority."
             </div>
           </motion.div>
 
-          <motion.div
-            className="services__item flex gap-[51px] items-center"
+          {servicesItems.map((item, index) => (
+            <ServicesItem
+              textAnimation={textAnimation}
+              img={item.img}
+              title={item.title}
+              text={item.text}
+              isImgLeft={item.isImgLeft}
+              index={index}
+              icon={icons[index]}
+            />
+          ))}
+
+          {/* <motion.div
+            className="services__item flex flex-col sm:flex-row gap-[51px] items-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
           >
             <motion.div
-              className="services__img"
+              className="services__img  hidden sm:block sm:w-full md:w-[460px]"
               variants={textAnimation}
               custom={1}
             >
               <img src={img1} alt="" />
             </motion.div>
             <motion.div
-              className="services__content max-w-[456px]"
+              className="services__content w-full md:max-w-[456px]"
               data-number="1"
               variants={textAnimation}
               custom={2}
@@ -118,10 +170,10 @@ available, majority."
                   />
                 </svg>
               </div>
-              <div className="services__subtitle subtitle text-[35px] mb-[10px] mt-[63px]">
+              <div className="services__subtitle subtitle w-full sm:max-w-[60%] md:max-w-fit text-[35px] mb-[10px] mt-[15px] sm:mt-[40px] md:mt-[63px]">
                 Concept & Details
               </div>
-              <div className="services__text">
+              <div className="services__text  max-w-[320px] md:max-w-fit">
                 <p>
                   It is a long established fact will be distracted. Lorem Ipsum
                   is simply dummy from text of the and typesetting indufstry.{" "}
@@ -312,8 +364,10 @@ available, majority."
             >
               <img src={img4} alt="" />
             </motion.div>
-          </motion.div>
+          </motion.div> */}
         </div>
+      </div>
+      <div className="container contents sm:block">
         <JoinContainer />
       </div>
     </div>
