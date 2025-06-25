@@ -1,32 +1,40 @@
 import { Link } from "react-router-dom";
-const Navigation = () => {
+const Navigation = ({ clickOnLink }) => {
   return (
     <div className="nav__wrapper flex">
-      <ul className="nav__list gap-x-[50px] mb-[24px] lg:mb-0  ml-[20px] lg:ml-0 gap-y-[24px]  lg:flex-row flex-col flex ">
-        <li className="nav__link text">
-          <Link to="/">Home</Link>
+      <ul
+        className="nav__list text-[20px] text-[var(--dark-color)]
+       md:text-[#292f36] gap-x-[50px] mb-[24px] lg:mb-0
+       lg:ml-0 gap-y-[24px]  lg:flex-row flex-col flex"
+        style={{ fontFamily: "var(--text)" }}
+      >
+        <li className="nav__link">
+          <button onClick={() => clickOnLink()}>Home</button>
         </li>
-        <li className="nav__link text">
-          <Link to="/about">About</Link>
+        <li className="nav__link">
+          <button onClick={() => clickOnLink()}>About</button>
         </li>
-        <li className="nav__link text">
+        <li className="nav__link">
           <Link to="/faq">Faq’s</Link>
         </li>
-        <li className="nav__link text ">
+        <li className="nav__link">
           <Link to="/services">Services</Link>
         </li>
-        <li className="nav__link text ">
+        <li className="nav__link">
           <Link to="/project">Project</Link>
         </li>
-        <li className="nav__link text ">
+        <li className="nav__link">
           <Link to="/blog">Blog</Link>
         </li>
-        <li className="nav__link text">
+        <li className="nav__link">
           <Link to="/contact">Contact</Link>
+        </li>
+        <li className="nav-link md:hidden block">
+          <a to="/pricing">Pricing</a>
         </li>
       </ul>
 
-      <button className="nav__button hidden lg:block">
+      <button className="nav__button ml-[31px] hidden lg:block">
         <svg
           width="23"
           height="24"

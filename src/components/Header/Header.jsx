@@ -4,39 +4,29 @@ import Logo from "./../../components/Logo/Logo";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import Navigation from "../Navigation/Navigation";
 const Header = () => {
-  const [input, setInput] = useState(false);
-  const [isOpenMenu, setIsOpenMenu] = useState(false);
-  function showSearch() {
-    setInput((prevState) => !prevState);
-    console.log(input);
-  }
+  const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
 
+  const toggleMenu = () => setIsOpenMobileMenu((prev) => !prev);
+
+  const clickOnLink = () => {
+    console.log("fff");
+  };
   return (
-    <div className={`header ${isOpenMenu ? "open" : ""}`}>
+    <div className="header">
       <div className="container">
         <nav className="nav py-[12px] md:py-[32px] xl:py-[44px] flex justify-between">
           <div className="">
             <Logo />
           </div>
           <div className="block lg:hidden">
-            <MobileMenu />
+            <MobileMenu
+              isOpenMobileMenu={isOpenMobileMenu}
+              toggleMenu={toggleMenu}
+            />
           </div>
-
-          {/* <button
-            class="header__burger-btn"
-            onClick={() => setIsOpenMenu((prev) => !prev)}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button> */}
           <div className="hidden lg:block">
-            <Navigation />
+            <Navigation clickOnLink={clickOnLink} />
           </div>
-
-          {/* <div className={`nav__input ${input ? "" : "nav__input--none"}`}>
-            <input type="text" />
-          </div> */}
         </nav>
       </div>
     </div>

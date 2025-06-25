@@ -14,12 +14,16 @@ const AboutForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="" noValidate>
-      <div>
-        <div className="flex lg:flex-row flex-col mb-[30px] lg:mb-[57px] w-full justify-start lg:justify-center gap-0 lg:gap-x-[40px] items-center">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="max-w-[795px] mx-auto"
+      noValidate
+    >
+      <div className="w-full">
+        <div className="flex lg:flex-row !w-full flex-col gap-[40px]">
           <div className="">
             <input
-              className={`text-[22px] text lg:w-[378px] ${
+              className={`text-[22px] !w-full mx-auto text ${
                 errors.name ? "" : "mb-[32px]"
               }`}
               placeholder="Name"
@@ -48,7 +52,7 @@ const AboutForm = () => {
           </div>
           <div className="">
             <input
-              className={`text text-[22px] w-full lg:w-[378px] ${
+              className={`text text-[22px] !w-full !lg:w-[378px] ${
                 errors.email ? "" : "mb-[32px]"
               }`}
               type="email"
@@ -87,7 +91,7 @@ const AboutForm = () => {
               return wordCount >= 2 || "Please write at least 2 words";
             },
           })}
-          className={`text text-[22px] w-full lg:w-[795px] h-[175px] focus:outline-none focus:ring-0 ${
+          className={`text text-[22px] w-full h-[175px] focus:outline-none focus:ring-0 ${
             errors.message ? "" : "mb-[32px]"
           }`}
         />

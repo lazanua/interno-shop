@@ -124,7 +124,10 @@ const About = () => {
           <h2 className="form__title title text-center mb-[77px]">
             Creative project? Let's have <br />a productive talk.
           </h2>
-          <AboutForm />
+          <div className="w-full">
+            <AboutForm />
+          </div>
+
           {/* <SendForm
             hasCheckbox={false}
             inputsNames={inputs}

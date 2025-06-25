@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="footer__row flex flex-col lg:flex-row items-start lg:items-start gap-x-[101px] gap-y-[30px]">
+        <div className="footer__row md:flex hidden flex-col lg:flex-row items-start lg:items-start gap-x-[101px] gap-y-[20px]">
           <div className="footer__item flex flex-col items-center lg:block w-[100%] lg:w-[auto]">
             <Logo />
             <div className="footer__text text mt-[26px] lg:max-w-[393px]">
@@ -35,11 +35,11 @@ const Footer = () => {
             </div>
           </div>
           <div className="contents">
-            <div className="footer__item w-[100%] lg:w-auto">
+            <div className="footer__item  w-[100%] lg:w-auto">
               <div className="footer__title subtitle text-center lg:text-start">
                 Pages
               </div>
-              <div className="footer__links min-w-[125px] flex flex-row justify-between lg:flex-col">
+              <div className="footer__links min-w-[125px] flex flex-row gap-x-[20px] justify-center lg:justify-between lg:flex-col">
                 <NavLink to="/about" className="footer__link text">
                   About Us
                 </NavLink>
@@ -61,7 +61,7 @@ const Footer = () => {
               <div className="footer__title subtitle text-center lg:text-start">
                 Services
               </div>
-              <div className="footer__links min-w-[120px] flex flex-row lg:flex-col justify-between">
+              <div className="footer__links min-w-[120px] flex flex-row lg:flex-col justify-center gap-x-[20px] lg:justify-between">
                 <a href="" className="footer__link text">
                   Kitchan
                 </a>

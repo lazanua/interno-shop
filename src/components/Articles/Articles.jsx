@@ -36,7 +36,7 @@ const Articles = () => {
 
   return (
     <div className="">
-      <div className="blog__articles ">
+      <div className="grid lg:grid-cols-3">
         {currentArticles.map((article) => (
           <Article
             category={article.category}

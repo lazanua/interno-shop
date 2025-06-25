@@ -166,7 +166,7 @@ available, majority."
       <section className="">
         <div className="container">
           <motion.div
-            className="home__row flex mb-[40px] xl:mb-[150px] lg:mb-[200px] gap-[75px] flex-row items-center"
+            className="home__row flex mb-[40px] xl:mb-[150px] lg:mb-[200px] gap-[30px] lg:gap-[60px] xl:gap-[75px] flex-row items-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -182,10 +182,14 @@ available, majority."
               custom={1}
             >
               <div className="home__bg-wrapper">
-                <h2 className="home__subtitle title mb-[33px]">
+                <h2
+                  className="
+                max-w-full md:max-w-[380px] lg:max-w-[420px] text-[30px] lg:text-[46px] xl:text-[50px] leading-[1.25] text-[#292f36]   mb-[33px] text-start"
+                  style={{ fontFamily: "var(--title)" }}
+                >
                   We Create The Art Of Stylish Living Stylishly
                 </h2>
-                <div className="home__text text-[16px] w-[90%] md:w-auto md:text-[18px] xl:text-[22px] text mb-[45px]">
+                <div className="home__text max-w-full md:max-w-[380px] lg:max-w-[472px] text-left text-[16px] w-[90%] md:w-auto md:text-[18px] xl:text-[22px] text mb-[45px]">
                   <p>
                     It is a long established fact that a reader will be
                     distracted by the of readable content of a page when
@@ -193,15 +197,20 @@ available, majority."
                     more-or-less normal.
                   </p>
                 </div>
-                <div className="flex flex-row lg:flex-col justify-between items-center lg:gap-x-[60px] lg:justify-center">
-                  <div className="home__number gap-[15px] flex">
-                    <div className="home__icon flex justify-center items-center p-[20px] xl:p-[30px] estimate__icon">
+                <div className="flex  flex-row md:flex-col gap-y-[24px] lg:gap-y-[47px] justify-between items-center lg:gap-x-[60px] lg:justify-center">
+                  <div className="home__number gap-[12px] md:gap-[15px] flex items-center">
+                    <div
+                      className="home__icon flex justify-center items-center
+                    w-[50px] h-[50px]
+                    md:w-[60px] md:h-[60px]
+                    xl:w-[93px] xl:h-[93px] estimate__icon"
+                    >
                       <a href="">
                         <svg
                           viewBox="0 0 34 34"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-[24px] h-[24px] md:w-[34px] md:h-[34px]"
+                          className="w-[24px] h-[24px] xl:w-[32px] xl:h-[32px]"
                         >
                           <path
                             d="M32.0012 26.0749C30.7796 24.8442 27.8211 23.0482 26.3857 22.3243C24.5164 21.3828 24.3625 21.3059 22.8933 22.3974C21.9133 23.1258 21.2617 23.7766 20.1148 23.532C18.9678 23.2874 16.4754 21.9082 14.2931 19.7329C12.1107 17.5576 10.6514 14.9931 10.4061 13.8501C10.1607 12.7071 10.8222 12.0632 11.5438 11.081C12.5607 9.69642 12.4838 9.46566 11.6145 7.59651C10.9368 6.14273 9.08833 3.21208 7.85291 1.99675C6.53134 0.691421 6.53134 0.92218 5.67979 1.27601C4.98652 1.56768 4.32141 1.92222 3.69281 2.3352C2.46201 3.15285 1.77892 3.83206 1.30122 4.85278C0.823513 5.87351 0.608893 8.26648 3.07588 12.7478C5.54286 17.2292 7.27367 19.5206 10.8561 23.0928C14.4385 26.6649 17.1931 28.5856 21.2202 30.844C26.2018 33.6339 28.1126 33.09 29.1365 32.6131C30.1604 32.1362 30.8427 31.4593 31.662 30.2286C32.076 29.6011 32.4314 28.9368 32.7235 28.2441C33.0781 27.3957 33.3089 27.3957 32.0012 26.0749Z"
@@ -211,10 +220,10 @@ available, majority."
                         </svg>
                       </a>
                     </div>
-                    <div className="home__numbers text-[24px]">
+                    <div className="home__numbers text-[20px] md:text-[24px]">
                       <span
-                        className="text"
-                        style={{ fontWeight: "700", fontSize: "24px" }}
+                        style={{ fontFamily: "var(--text)" }}
+                        className="text-[#4d5053] font-bold md:text-[24px] leadinf-[1.5] text-[20px]"
                       >
                         012345678
                       </span>
@@ -223,7 +232,7 @@ available, majority."
                     </div>
                   </div>
                   <button
-                    className="home__button mt-[47px] w-[240px] button "
+                    className="home__button w-[240px] button "
                     onClick={() => (window.location.href = "/pricing")}
                   >
                     <div className="--after-arow">Get Free Estimate</div>
@@ -232,7 +241,7 @@ available, majority."
               </div>
             </motion.div>
             <motion.div
-              className="home__img  hidden xl:block"
+              className="home__img  hidden md:block"
               variants={animationsRight}
               custom={2}
             >
@@ -335,7 +344,7 @@ statistics"
           <Statistics />
         </div>
       </section>
-      {/* <section className="articles py-[40px]  md:py-[80px] lg:my-[160px] xl:my-[200px]">
+      <section className="articles py-[40px]  md:py-[80px] lg:my-[160px] xl:my-[200px]">
         <div className="container">
           <motion.div
             className="articles__wpapper flex"
@@ -362,23 +371,31 @@ statistics"
               </p>
             </motion.div>
 
-            <div className="articles__articles flex items-center justify-center">
-              {articlesInfo.map((article, index) => (
-                <div className="" key={index}>
-                  <Article
-                    title={article.title}
-                    category={article.category}
-                    date={article.date}
-                    img={article.img}
-                    animation={animationsTop}
-                    custom={index + 1}
-                  />
-                </div>
-              ))}
+            <div className="contents md:block lg:contents  max-w-full overflow-x-auto">
+              <div
+                className="articles__articles gap-y-[24px] gap-x-[14px] md:gap-x-[20px]
+            xl:gap-x-[27px]
+            flex md:flex-row flex-col items-center justify-center w-auto lg:w-auto md:w-[939px]
+            
+            "
+              >
+                {articlesInfo.map((article, index) => (
+                  <div className="" key={index}>
+                    <Article
+                      title={article.title}
+                      category={article.category}
+                      date={article.date}
+                      img={article.img}
+                      animation={animationsTop}
+                      custom={index + 1}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>
-      </section> */}
+      </section>
       <JoinContainer />
     </main>
   );

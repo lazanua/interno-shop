@@ -10,15 +10,15 @@ const ServicesItem = ({
 }) => {
   return (
     <motion.div
-      className={`services__item flex flex-col ${
-        isImgLeft ? "sm:flex-row" : "sm:flex-row-reverse"
-      } gap-[51px] items-center`}
+      className={`services__item flex ${
+        isImgLeft ? "xs:flex-row" : "xs:flex-row-reverse"
+      } gap-[16px] md:gap-[51px] items-center`}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
     >
       <motion.div
-        className="services__img  hidden sm:block sm:w-full md:w-[460px]"
+        className="services__img hidden xs:block xs:w-[310px] sm:w-[420px] md:w-[460px]"
         variants={textAnimation}
         custom={1}
       >
@@ -36,7 +36,7 @@ const ServicesItem = ({
         <div className="services__subtitle subtitle w-full sm:max-w-[60%] md:max-w-fit text-[35px] mb-[10px] mt-[15px] sm:mt-[40px] md:mt-[63px]">
           {title}
         </div>
-        <div className="services__text  max-w-[320px] md:max-w-fit">
+        <div className="services__text  w-full md:max-w-fit">
           <p>{text}</p>
         </div>
       </motion.div>

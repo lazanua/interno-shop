@@ -73,7 +73,7 @@ const SliderReview = ({ slidersInfo }) => {
       >
         <img src={arrow} className="h-[20px] w-[12px] " alt="" />
       </button>
-      <div className="relative w-[370px] pt-[24px] h-[250px] overflow-hidden rounded-lg shadow-lg mx-auto bg-white">
+      <div className="relative w-[370px] sm:w-[430px] pt-[24px] h-[250px] overflow-hidden rounded-lg shadow-lg mx-auto bg-white">
         <div
           ref={trackRef}
           className={`flex w-full h-full ${

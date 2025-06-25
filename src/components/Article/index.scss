@@ -1,11 +1,8 @@
 .article {
   position: relative;
-  padding: 21px;
   box-shadow: 0 10px 30px 0 rgba(255, 255, 255, 0.25);
   border: 1px solid #e7e7e7;
-  border-radius: 62px;
   max-width: 382px;
-  height: 521px;
   transition: all 0.3s ease-in;
   &:hover {
     background-color: #f4f0ec;
@@ -17,36 +14,38 @@
 
   .article__row {
     position: absolute;
-    left: 21px;
-    bottom: 38px;
-    justify-content: space-between;
-    width: 340px;
+    // left: 21px;
+    // bottom: 38px;
+    // justify-content: space-between;
   }
 }
 .article__wrapper {
   position: relative;
 }
-.article__title {
-  margin-top: 21px;
-}
+// .article__title {
+//   margin-top: 21px;
+// }
 .article__category {
+  font-family: var(--text);
   position: absolute;
-  bottom: 20px;
-  left: 20px;
   background-color: white;
   border-radius: 8px 8px 8px 0;
-  padding: 4px 18px 8px 11px;
+  // padding: 4px 18px 8px 11px;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.01em;
   text-transform: capitalize;
   color: #4d5053;
 }
+
 .article__img {
   overflow: hidden;
-  width: 340px;
-  height: 289px;
   border-radius: 45px 45px 0 0;
+}
+@media (max-width: 768px) {
+  .article__img {
+    border-radius: 30px 30px 0 0;
+  }
 }
 .article__img img {
   width: 100%;
@@ -60,8 +59,6 @@
 }
 .article__button {
   border-radius: 100%;
-  width: 52px;
-  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -31,6 +31,7 @@ const Partners = () => {
               <motion.img
                 src={partner}
                 alt=""
+                className="md:w-full w-[80%]"
                 custom={index + 1}
                 variants={partnersAnimation}
               />
