@@ -20,10 +20,10 @@ const AboutForm = () => {
       noValidate
     >
       <div className="w-full">
-        <div className="flex lg:flex-row !w-full flex-col gap-[40px]">
+        <div className="flex lg:flex-row flex-col gap-y-[20px] gap-x-[40px]">
           <div className="">
             <input
-              className={`text-[22px] !w-full mx-auto text ${
+              className={`text-[18px] md:text-[20px] lg:text-[22px] w-full lg:w-[378px] text ${
                 errors.name ? "" : "mb-[32px]"
               }`}
               placeholder="Name"
@@ -52,7 +52,7 @@ const AboutForm = () => {
           </div>
           <div className="">
             <input
-              className={`text text-[22px] !w-full !lg:w-[378px] ${
+              className={`text text-[18px] md:text-[20px] lg:text-[22px] w-full lg:w-[378px]  ${
                 errors.email ? "" : "mb-[32px]"
               }`}
               type="email"
@@ -91,7 +91,7 @@ const AboutForm = () => {
               return wordCount >= 2 || "Please write at least 2 words";
             },
           })}
-          className={`text text-[22px] w-full h-[175px] focus:outline-none focus:ring-0 ${
+          className={`text text-[18px] md:text-[20px] lg:text-[22px] w-full h-[120px] md:h-[175px] focus:outline-none focus:ring-0 ${
             errors.message ? "" : "mb-[32px]"
           }`}
         />
@@ -102,10 +102,10 @@ const AboutForm = () => {
         )}
       </div>
 
-      <div className="flex justify-center mt-[77px]">
+      <div className="flex justify-center mt-[20px] md:mt-[32px] lg:mt-[60px] xl:mt-[77px]">
         <button
           type="submit"
-          className="form__button button w-[220px] mt-[30px]"
+          className="form__button button w-[180px] lg:w-[220px] mt-[30px]"
         >
           <span className="--after-arow">Send Now</span>
         </button>

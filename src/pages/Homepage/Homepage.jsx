@@ -184,12 +184,13 @@ available, majority."
               <div className="home__bg-wrapper">
                 <h2
                   className="
-                max-w-full md:max-w-[380px] lg:max-w-[420px] text-[30px] lg:text-[46px] xl:text-[50px] leading-[1.25] text-[#292f36]   mb-[33px] text-start"
+                max-w-full md:max-w-[380px] lg:max-w-[420px]
+                text-[22px] sm:text-[24px] md:text-[30px] lg:text-[46px] xl:text-[50px] leading-[1.25] text-[#292f36]   mb-[33px] text-start"
                   style={{ fontFamily: "var(--title)" }}
                 >
                   We Create The Art Of Stylish Living Stylishly
                 </h2>
-                <div className="home__text max-w-full md:max-w-[380px] lg:max-w-[472px] text-left text-[16px] w-[90%] md:w-auto md:text-[18px] xl:text-[22px] text mb-[45px]">
+                <div className="home__text max-w-full md:max-w-[430px] lg:max-w-[472px] text-left text-[16px] w-[90%] md:w-auto md:text-[18px] xl:text-[22px] text mb-[45px]">
                   <p>
                     It is a long established fact that a reader will be
                     distracted by the of readable content of a page when
@@ -197,7 +198,10 @@ available, majority."
                     more-or-less normal.
                   </p>
                 </div>
-                <div className="flex  flex-row md:flex-col gap-y-[24px] lg:gap-y-[47px] justify-between items-center lg:gap-x-[60px] lg:justify-center">
+                <div
+                  className="flex flex-col sm:flex-row md:flex-col gap-y-[24px]
+                lg:gap-y-[47px] justify-between items-center lg:gap-x-[60px] lg:justify-center"
+                >
                   <div className="home__number gap-[12px] md:gap-[15px] flex items-center">
                     <div
                       className="home__icon flex justify-center items-center
@@ -232,7 +236,7 @@ available, majority."
                     </div>
                   </div>
                   <button
-                    className="home__button w-[240px] button "
+                    className="home__button w-auto lg:w-[240px] button "
                     onClick={() => (window.location.href = "/pricing")}
                   >
                     <div className="--after-arow">Get Free Estimate</div>

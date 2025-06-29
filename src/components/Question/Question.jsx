@@ -1,8 +1,47 @@
-import { useState } from "react";
-import "./index.scss";
-const Question = ({ title, id, onClickQuestion, isActive }) => {
+import arrow from "../../img/pages/faq/arrow.svg";
+const Question = ({ title, id, onClickQuestion, isActive, numberOfBlock }) => {
   return (
-    <div
+    <div className="mb-[20px]">
+      <div
+        className="text-dark w-full lg:w-[500px] xl:w-[585px]"
+        onClick={() => onClickQuestion(id, numberOfBlock)}
+        style={{ borderBottom: "1px solid var(--brown)" }}
+      >
+        <button
+          className={`flex gap-[10px] justify-between w-full items-center pr-[4px] sm:pr-[22px] ${
+            isActive ? "pb-[13px]" : "md:pb-[26px] pb-[20px] lg:pb-[32px]"
+          } `}
+        >
+          <p
+            className={`text-start text-[18px] sm:text-[20px] lg:text-[25px] leading-[1.5]
+          ${isActive ? "text-[var(--brown)]" : "text-[var(--dark-color)]"} `}
+            style={{ fontFamily: "var(--title)" }}
+          >
+            {title}
+          </p>
+          <img
+            src={arrow}
+            className={`transition-all duration-300 ease-in-out ${
+              isActive ? "rotate-[90deg]" : ""
+            } `}
+            alt=""
+          />
+        </button>
+
+        <div
+          className={`transition-all duration-300 ease-in-out overflow-hidden ${
+            isActive ? `max-h-[250px] opacity-100` : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className="question__text text mb-[32px]">
+            Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
+            turpmaximus.posuere in.Contrary popular belief. There are many
+            variations of passages of Lorem Ipsum available, but the majority
+            randomised.
+          </div>
+        </div>
+      </div>
+      {/* <div
       onClick={() => onClickQuestion(id)}
       className={`question lg:w-[100%] xl:w-[585px] mt-[20px]  ${
         isActive ? "active" : ""
@@ -51,6 +90,7 @@ const Question = ({ title, id, onClickQuestion, isActive }) => {
         variations of passages of Lorem Ipsum available, but the majority
         randomised.
       </div>
+    </div> */}
     </div>
   );
 };

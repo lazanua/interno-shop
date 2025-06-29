@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/interno-shop/static/css/main.747cf962.css",
-    "main.js": "/interno-shop/static/js/main.e11a230c.js",
+    "main.css": "/interno-shop/static/css/main.77bb4b46.css",
+    "main.js": "/interno-shop/static/js/main.d802003d.js",
     "static/media/bg.jpg": "/interno-shop/static/media/bg.5226bf2aedd58542d7e5.jpg",
     "static/media/person1.jpg": "/interno-shop/static/media/person1.79465eb045fec4794088.jpg",
     "static/media/person8.jpg": "/interno-shop/static/media/person8.8543e5daf342d4c60ffa.jpg",
@@ -13,6 +13,7 @@
     "static/media/04.jpg": "/interno-shop/static/media/04.5772fdf78ac1fb45b712.jpg",
     "static/media/02.jpg": "/interno-shop/static/media/02.16cd1a33dd8775a09b39.jpg",
     "static/media/03.jpg": "/interno-shop/static/media/03.c06cbfc9e3e3fb632902.jpg",
+    "static/media/main-photo.jpg": "/interno-shop/static/media/main-photo.a21bcd1c86676c3221f8.jpg",
     "static/media/person5.jpg": "/interno-shop/static/media/person5.3c4fa78a8cab4f6a50f7.jpg",
     "static/media/person3.jpg": "/interno-shop/static/media/person3.6b35ba9da62f3122e5ed.jpg",
     "static/media/02.svg": "/interno-shop/static/media/02.e2374c6461bb42ab4145e1a96766eaf7.svg",
@@ -35,11 +36,11 @@
     "static/media/arrow-btn.svg": "/interno-shop/static/media/arrow-btn.d4cbd0aa2724ca538a7e.svg",
     "static/media/patter-after.svg": "/interno-shop/static/media/patter-after.ca0f906545934fa8c0f4.svg",
     "static/media/patter-before.svg": "/interno-shop/static/media/patter-before.a738ad336885d34a81e0.svg",
-    "main.747cf962.css.map": "/interno-shop/static/css/main.747cf962.css.map",
-    "main.e11a230c.js.map": "/interno-shop/static/js/main.e11a230c.js.map"
+    "main.77bb4b46.css.map": "/interno-shop/static/css/main.77bb4b46.css.map",
+    "main.d802003d.js.map": "/interno-shop/static/js/main.d802003d.js.map"
   },
   "entrypoints": [
-    "static/css/main.747cf962.css",
-    "static/js/main.e11a230c.js"
+    "static/css/main.77bb4b46.css",
+    "static/js/main.d802003d.js"
   ]
 }

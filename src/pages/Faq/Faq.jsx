@@ -24,20 +24,17 @@ const questions = [
   ],
 ];
 const Faq = () => {
-  const [activeQuestion, setActiveQuestion] = useState(-1);
-  const [activeQuestion2, setActiveQuestion2] = useState(-1);
-  const onClickQuestion = (id) => {
-    if (activeQuestion === id) {
-      setActiveQuestion(-1);
-    } else {
-      setActiveQuestion(id);
-    }
-  };
-  const onClickQuestion2 = (id) => {
-    if (activeQuestion2 === id) {
-      setActiveQuestion2(-1);
-    } else {
-      setActiveQuestion2(id);
+  const [activeQuestions, setActiveQuestions] = useState([-1, -1]);
+  const onClickQuestion = (id, numberOfBlock) => {
+    setActiveQuestions((prevArr) =>
+      prevArr.map((item, i) => (i === numberOfBlock ? -1 : item))
+    );
+    if (activeQuestions[numberOfBlock] !== id) {
+      setTimeout(() => {
+        setActiveQuestions((prevArr) =>
+          prevArr.map((item, i) => (i === numberOfBlock ? id : item))
+        );
+      }, 200);
     }
   };
   useEffect(() => {
@@ -48,19 +45,22 @@ const Faq = () => {
       <Title title="Faq’s" img={bg} subtitle="faq" />
       <div className="container">
         <motion.div
-          className="faq__wrapper mb-[150px]"
+          className="faq__wrapper mb-[60px] md:mb-[80px] lg:mb-[150px]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
           <motion.h2
-            className="faq__title title mb-[50px] text-center"
+            className="faq__title title md:mb-[50px] text-center"
             variants={animations}
             custom={1}
           >
             Every Question Answered
           </motion.h2>
-          <div className="faq__row flex flex-col justify-center lg:flex-row lg:justify-between gap-[20px] xl:gap-[60px] items-center mx-auto">
+          <div
+            className="faq__row flex flex-col justify-center lg:flex-row
+          lg:justify-between gap-[20px] xl:gap-[60px] items-center lg:items-start mx-auto"
+          >
             <motion.div
               className="faq__question-block mt-[50px]"
               variants={animationsTop}
@@ -72,13 +72,14 @@ const Faq = () => {
                     title={title}
                     id={index}
                     onClickQuestion={onClickQuestion}
-                    isActive={activeQuestion === index ? true : false}
+                    isActive={activeQuestions[0] === index ? true : false}
+                    numberOfBlock={0}
                   />
                 </div>
               ))}
             </motion.div>
             <motion.div
-              className="faq__img lg:w-[80%] lg:h-[80%] md:w-[80%] md:h-[80%]"
+              className="faq__img lg:w-[80%] lg:h-[80%]"
               variants={animationsTop}
               custom={2}
             >
@@ -87,25 +88,25 @@ const Faq = () => {
           </div>
         </motion.div>
         <motion.div
-          className="faq__wrapper mb-[200px]"
+          className="faq__wrapper mb-[40px] sm:mb-[60px] md:mb-[100px] lg:mb-[200px]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
           <h2
-            className="faq__title title mb-[50px] text-center"
+            className="faq__title title  md:mb-[50px] text-center"
             variants={animations}
             custom={1}
           >
             Project related questions
           </h2>
-          <div className="faq__row flex flex-col justify-center lg:flex-row xl:justify-between gap-[20px] xl:gap-[60px] items-center mx-auto">
+          <div className="faq__row flex flex-col-reverse justify-center lg:flex-row xl:justify-between gap-[20px] xl:gap-[60px] items-center lg:items-start mx-auto">
             <motion.div
-              className="faq__img"
+              className="faq__img lg:w-[80%] lg:h-[80%]"
               variants={animationsTop}
               custom={1}
             >
-              <img className="rounded-[40px]" src={img2} alt="" />
+              <img className="rounded-[40px] " src={img2} alt="" />
             </motion.div>
             <motion.div
               className="faq__question-block mt-[50px]"
@@ -117,8 +118,9 @@ const Faq = () => {
                   <Question
                     title={title}
                     id={index}
-                    onClickQuestion={onClickQuestion2}
-                    isActive={activeQuestion2 === index ? true : false}
+                    onClickQuestion={onClickQuestion}
+                    isActive={activeQuestions[1] === index ? true : false}
+                    numberOfBlock={1}
                   />
                 </div>
               ))}

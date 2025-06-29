@@ -127,12 +127,6 @@ const About = () => {
           <div className="w-full">
             <AboutForm />
           </div>
-
-          {/* <SendForm
-            hasCheckbox={false}
-            inputsNames={inputs}
-            buttonClasses="justify-center"
-          /> */}
         </div>
       </section>
     </main>
