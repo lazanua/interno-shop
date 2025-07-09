@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/interno-shop/static/css/main.038d5456.css",
-    "main.js": "/interno-shop/static/js/main.a85bfe56.js",
+    "main.css": "/interno-shop/static/css/main.319bf3a6.css",
+    "main.js": "/interno-shop/static/js/main.c47ef686.js",
     "static/media/bg.jpg": "/interno-shop/static/media/bg.5226bf2aedd58542d7e5.jpg",
     "static/media/person1.jpg": "/interno-shop/static/media/person1.79465eb045fec4794088.jpg",
     "static/media/person8.jpg": "/interno-shop/static/media/person8.8543e5daf342d4c60ffa.jpg",
@@ -30,6 +30,7 @@
     "static/media/twitter.svg": "/interno-shop/static/media/twitter.6a5ec03bca7abd4973590d8aaf30930b.svg",
     "static/media/icon-call.svg": "/interno-shop/static/media/icon-call.dde5607785de3988023c1379ae4eab71.svg",
     "index.html": "/interno-shop/index.html",
+    "static/media/marker.svg": "/interno-shop/static/media/marker.3cba11234a7e2e1efa613909b5342a71.svg",
     "static/media/linkedin.svg": "/interno-shop/static/media/linkedin.01c30616c0c3e6cb8747601a4ff67063.svg",
     "static/media/facebook.svg": "/interno-shop/static/media/facebook.7c78fd5e68f85e10936d412c13792adb.svg",
     "static/media/arrow.svg": "/interno-shop/static/media/arrow.aec779b083a7ea2536195d260fa3ae01.svg",
@@ -37,11 +38,11 @@
     "static/media/arrow-btn.svg": "/interno-shop/static/media/arrow-btn.d4cbd0aa2724ca538a7e.svg",
     "static/media/patter-after.svg": "/interno-shop/static/media/patter-after.ca0f906545934fa8c0f4.svg",
     "static/media/patter-before.svg": "/interno-shop/static/media/patter-before.a738ad336885d34a81e0.svg",
-    "main.038d5456.css.map": "/interno-shop/static/css/main.038d5456.css.map",
-    "main.a85bfe56.js.map": "/interno-shop/static/js/main.a85bfe56.js.map"
+    "main.319bf3a6.css.map": "/interno-shop/static/css/main.319bf3a6.css.map",
+    "main.c47ef686.js.map": "/interno-shop/static/js/main.c47ef686.js.map"
   },
   "entrypoints": [
-    "static/css/main.038d5456.css",
-    "static/js/main.a85bfe56.js"
+    "static/css/main.319bf3a6.css",
+    "static/js/main.c47ef686.js"
   ]
 }
